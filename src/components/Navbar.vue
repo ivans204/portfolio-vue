@@ -1,0 +1,87 @@
+<template>
+  <b-container fluid="sm">
+    <b-row class="height">
+
+      <b-col cols="3" class="text-left">
+        <a href="#" class="logo">ivan<span>svrga</span></a>
+      </b-col>
+
+      <b-col cols="6" class="nav-links">
+        <a href="#">home</a>
+        <span>/</span>
+        <a href="#">projects</a>
+        <span>/</span>
+        <a href="#">contact</a>
+      </b-col>
+
+      <b-col cols="3" class="contact">
+        <button class="btn-contact ml-auto d-block">contact me</button>
+      </b-col>
+
+    </b-row>
+  </b-container>
+</template>
+
+<script>
+export default {
+  name: 'Navbar',
+}
+</script>
+
+<style scoped lang="scss">
+
+.height {
+  height: 150px;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.logo {
+  font-family: 'Ubuntu', sans-serif;
+  color: #292E34;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.nav-links {
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 2.4px;
+  text-align: center;
+
+  a {
+    color: #D2D2D2;
+
+    &:hover {
+      text-decoration: underline #F9CA30;
+    }
+  }
+
+  span {
+    margin: 0 16px;
+    color: #F9CA30;
+  }
+}
+
+.contact {
+  height: 100%;
+}
+
+.btn-contact {
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 2.4px;
+  background-color: #F9CA30;
+  border: none;
+  height: 100%;
+  text-decoration: underline;
+  padding: 0 10px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+</style>
