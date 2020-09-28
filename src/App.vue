@@ -9,7 +9,14 @@
       </b-container>
     </section>
     <About></About>
-
+    <section id="myprojects" class="section-name">
+      <b-container>
+        <h3>
+          >> cd myprojects
+        </h3>
+      </b-container>
+    </section>
+    <Projects></Projects>
 
 <!--    <div id="nav">-->
 <!--      <router-link to="/">Home</router-link>-->
@@ -24,12 +31,14 @@
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue'
 import About from '@/components/About.vue'
+import Projects from '@/components/Projects.vue'
 
 export default {
   name: 'Home',
   components: {
     Navbar,
     About,
+    Projects,
   }
 }
 </script>
@@ -42,6 +51,7 @@ export default {
 
 #intro {
   margin: 100px 0;
+  padding: 0 15px;
 }
 
 .intro-text {
@@ -51,6 +61,18 @@ export default {
 
 .yellow {
   color: #F9CA30;
+}
+
+.section-name {
+  background-color: #F9CA30;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 3px;
+
+  h3 {
+    padding: 15px 0;
+    font-size: 1.4rem;
+  }
 }
 
 #nav {

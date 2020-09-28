@@ -3,7 +3,7 @@
 
     <b-container>
       <b-row>
-        <b-col class="education">
+        <b-col cols="12" sm="5" class="education">
           <h3><span>// </span>Education</h3>
 
           <div class="school">
@@ -19,12 +19,14 @@
           </div>
 
         </b-col>
-        <b-col cols="7" class="about">
-          <h3><span>// </span>About Us</h3>
+        <b-col cols="12" sm="7" class="about">
+          <h3><span>// </span>About Me</h3>
           <p class="about-text">My name is Ivan Švrga and I'm from Velika Gorica (town near Zagreb).</p>
-          <p class="about-text">My passion is front-end development and I like to be surrounded with countless lines of code, because it makes me feel good doing something like this.</p>
+          <p class="about-text">My passion is front-end development and I like to be surrounded with countless lines of
+            code, because it makes me feel good doing something like this.</p>
           <p class="about-text">For anything else about me feel free to contact me. :)</p>
         </b-col>
+
       </b-row>
     </b-container>
 
@@ -57,11 +59,32 @@ export default {
 
 .education {
   padding-right: 60px;
+  background-color: black;
+
+  @media screen and (max-width: 768px) and (min-width: 575px) {
+    padding-right: 15px;
+  }
+
+  @media screen and (width: 576px)  {
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 0 30px;
+  }
 }
 
 .about {
   background-color: #111111;
   padding-left: 50px;
+
+  @media screen and (width: 576px)  {
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 0 30px;
+  }
 }
 
 .school {
@@ -95,5 +118,9 @@ p {
   margin-bottom: 20px;
   font-size: 1.4rem;
   letter-spacing: 2px;
+
+  &:last-child {
+    margin-bottom: 100px;
+  }
 }
 </style>
