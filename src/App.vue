@@ -5,11 +5,13 @@
 
     <section id="intro">
       <b-container>
-        <h1 class="intro-text">Hi! <span class="font-weight-bold">I'm Ivan,</span> web developer <br> based in Croatia<span class="yellow font-weight-bold">.</span></h1>
+        <h1 class="intro-text">Hi! <span class="font-weight-bold">I'm Ivan,</span> web developer <br> based in
+          Croatia<span class="yellow font-weight-bold">.</span></h1>
       </b-container>
     </section>
     <About></About>
-    <section id="myprojects" class="section-name">
+
+    <section id="myProjects" class="section-name">
       <b-container>
         <h3>
           >> cd myprojects
@@ -18,12 +20,28 @@
     </section>
     <Projects></Projects>
 
-<!--    <div id="nav">-->
-<!--      <router-link to="/">Home</router-link>-->
-<!--      |-->
-<!--      <router-link to="/about">About</router-link>-->
-<!--    </div>-->
-<!--    <router-view/>-->
+    <section id="mySkills" class="section-name">
+      <b-container>
+        <h3>
+          >> cd myskills
+        </h3>
+      </b-container>
+    </section>
+    <Skills></Skills>
+
+    <section id="contact">
+      <b-container>
+        <h2 class="contact-title">For any questions, feel free to contact me.</h2>
+        <button class="contact-btn">contact ></button>
+      </b-container>
+    </section>
+
+    <!--    <div id="nav">-->
+    <!--      <router-link to="/">Home</router-link>-->
+    <!--      |-->
+    <!--      <router-link to="/about">About</router-link>-->
+    <!--    </div>-->
+    <!--    <router-view/>-->
   </div>
 </template>
 
@@ -32,6 +50,7 @@
 import Navbar from '@/components/Navbar.vue'
 import About from '@/components/About.vue'
 import Projects from '@/components/Projects.vue'
+import Skills from '@/components/Skills.vue'
 
 export default {
   name: 'Home',
@@ -39,11 +58,12 @@ export default {
     Navbar,
     About,
     Projects,
+    Skills,
   }
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 #app {
   font-family: 'Nunito', sans-serif;
   color: #292E34;
@@ -86,5 +106,27 @@ export default {
       color: #42b983;
     }
   }
+}
+
+#contact {
+  background-color: black;
+  padding: 100px 0;
+}
+
+.contact-title {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-btn {
+  background-color: transparent;
+  color: #F9CA30;
+  border: none;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  display: block;
 }
 </style>
