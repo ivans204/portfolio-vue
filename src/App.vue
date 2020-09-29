@@ -50,7 +50,7 @@ export default {
 }
 
 #intro {
-  margin: 100px 0;
+  margin: 150px 0;
   padding: 0 15px;
 }
 
