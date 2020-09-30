@@ -1,36 +1,48 @@
 <template>
-  <b-container fluid="sm">
-    <b-row class="height">
+  <div class="">
 
-      <b-col cols="3" class="text-left">
-        <a href="#" class="logo">ivan<span>svrga</span></a>
-      </b-col>
+    <b-container fluid="sm" class="d-none d-md-block">
+      <b-row class="nav-height">
 
-      <b-col cols="6" class="nav-links">
-        <a href="#">home</a>
-        <span>/</span>
-        <a href="#">projects</a>
-        <span>/</span>
-        <a href="#">contact</a>
-      </b-col>
+        <b-col cols="3" class="text-left">
+          <a href="#" class="logo">ivan<span>svrga</span></a>
+        </b-col>
 
-      <b-col cols="3" class="contact">
-        <button class="btn-contact ml-auto d-block">contact me</button>
-      </b-col>
+        <b-col cols="6" class="nav-links">
+          <a href="#">home</a>
+          <span>/</span>
+          <a href="#">projects</a>
+          <span>/</span>
+          <a href="#">contact</a>
+        </b-col>
 
-    </b-row>
-  </b-container>
+        <b-col cols="3" class="contact">
+          <button class="btn-contact ml-auto d-block">contact me</button>
+        </b-col>
+
+      </b-row>
+    </b-container>
+
+    <navbar-mobile class="d-md-none"></navbar-mobile>
+
+  </div>
+
 </template>
 
 <script>
+import navbarMobile from '@/components/NavbarMobile.vue'
+
 export default {
   name: 'Navbar',
+  components: {
+    navbarMobile
+  }
 }
 </script>
 
 <style scoped lang="scss">
 
-.height {
+.nav-height {
   height: 150px;
   align-items: center;
   font-size: 1.3rem;

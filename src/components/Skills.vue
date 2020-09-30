@@ -1,7 +1,7 @@
 <template>
   <b-container class="skills">
     <b-row>
-      <b-col cols="12" md="2" sm="4" v-for="icon in icons" :key="icon.icon" class="skills-col">
+      <b-col cols="12" lg="2" md="4" sm="4" v-for="icon in icons" :key="icon.icon" class="skills-col">
         <img :src="[!icon.hover ? icon.icon : icon.iconHover]" alt="" @mouseover="icon.hover = true"
              @mouseleave="icon.hover = false">
       </b-col>
@@ -57,10 +57,22 @@ export default {
 }
 
 .skills-col {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+
   @media screen and (max-width: 575px) {
-    img {
-      display: block;
-      margin: 25px auto;
+    margin-bottom: 100px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: 991px) and (min-width: 576px){
+    &:nth-child(-n+3) {
+      margin-bottom: 100px;
     }
   }
 }
