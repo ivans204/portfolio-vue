@@ -36,6 +36,8 @@
       </b-container>
     </section>
 
+    <Footer></Footer>
+
     <!--    <div id="nav">-->
     <!--      <router-link to="/">Home</router-link>-->
     <!--      |-->
@@ -51,6 +53,7 @@ import Navbar from '@/components/Navbar.vue'
 import About from '@/components/About.vue'
 import Projects from '@/components/Projects.vue'
 import Skills from '@/components/Skills.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Home',
@@ -59,6 +62,7 @@ export default {
     About,
     Projects,
     Skills,
+    Footer,
   }
 }
 </script>
