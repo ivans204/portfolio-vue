@@ -2,7 +2,7 @@
   <b-container class="projects">
     <div class="project">
 
-      <b-row v-for="project in projects" :key="project" class="project-bg" :class="{ 'rev': project.reverse}">
+      <b-row v-for="(project, i) in projects" :key="project[i]" class="project-bg" :class="{ 'rev': project.reverse}">
 
         <b-col cols="12" sm="6" class="center-item">
           <div class="project-wrapper">

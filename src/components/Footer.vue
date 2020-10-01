@@ -1,14 +1,18 @@
 <template>
   <b-container class="footer">
     <b-row>
-      <b-col cols="12" class="social">
+      <b-col class="social" cols="12">
 
         <div class="social-icons-wrap">
-          <img class="social-icons" :src="require('../assets/icons/github.svg')" alt="github">
+          <a href="https://github.com/ivans204" target="_blank">
+            <img :src="require('../assets/icons/github.svg')" alt="github" class="social-icons">
+          </a>
         </div>
 
         <div class="social-icons-wrap">
-          <img class="social-icons" :src="require('../assets/icons/linkedin.svg')" alt="linkedin">
+          <a href="https://www.linkedin.com/in/ivan-svrga/" target="_blank">
+            <img :src="require('../assets/icons/linkedin.svg')" alt="linkedin" class="social-icons">
+          </a>
         </div>
 
       </b-col>
@@ -18,37 +22,37 @@
 </template>
 
 <script>
-export default {
-  name: 'Footer',
-}
+  export default {
+    name: 'Footer',
+  }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 
-.footer {
-  margin: 100px auto;
-}
+  .footer {
+    margin: 100px auto;
+  }
 
-.social {
-  display: flex;
-  justify-content: center;
-}
+  .social {
+    display: flex;
+    justify-content: center;
+  }
 
-.social-icons-wrap {
-  padding: 15px;
-  background-color: #f5f5f5;
-  margin: 0 50px;
-}
+  .social-icons-wrap {
+    padding: 15px;
+    background-color: #f5f5f5;
+    margin: 0 50px;
+  }
 
-.social-icons {
-  width: 50px;
-}
+  .social-icons {
+    width: 50px;
+  }
 
-.footer-copyright {
-  margin-top: 100px;
-  font-size: 1.3rem;
-  color: #D2D2D2;
-  font-family: 'Nunito', sans-serif;
-  letter-spacing: 3px;
-}
+  .footer-copyright {
+    margin-top: 100px;
+    font-size: 1.3rem;
+    color: #D2D2D2;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 3px;
+  }
 </style>
