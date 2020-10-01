@@ -9,7 +9,7 @@
         </b-col>
 
         <b-col cols="6" class="nav-links">
-          <a href="#">home</a>
+          <a href="#"><router-link to="/">home</router-link></a>
           <span>/</span>
           <a href="#">projects</a>
           <span>/</span>

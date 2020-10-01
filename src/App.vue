@@ -3,38 +3,7 @@
 
     <Navbar></Navbar>
 
-    <section id="intro">
-      <b-container>
-        <h1 class="intro-text">Hi! <span class="font-weight-bold">I'm Ivan,</span> web developer <br> based in
-          Croatia<span class="yellow font-weight-bold">.</span></h1>
-      </b-container>
-    </section>
-    <About></About>
-
-    <section id="myProjects" class="section-name">
-      <b-container>
-        <h3>
-          >> cd myprojects
-        </h3>
-      </b-container>
-    </section>
-    <Projects></Projects>
-
-    <section id="mySkills" class="section-name">
-      <b-container>
-        <h3>
-          >> cd myskills
-        </h3>
-      </b-container>
-    </section>
-    <Skills></Skills>
-
-    <section id="contact">
-      <b-container>
-        <h2 class="contact-title">For any questions, feel free to contact me.</h2>
-        <button class="contact-btn">contact ></button>
-      </b-container>
-    </section>
+    <router-view/>
 
     <Footer></Footer>
 
@@ -43,25 +12,19 @@
     <!--      |-->
     <!--      <router-link to="/about">About</router-link>-->
     <!--    </div>-->
-    <!--    <router-view/>-->
+
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue'
-import About from '@/components/About.vue'
-import Projects from '@/components/Projects.vue'
-import Skills from '@/components/Skills.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Home',
   components: {
     Navbar,
-    About,
-    Projects,
-    Skills,
     Footer,
   }
 }
