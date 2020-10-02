@@ -8,7 +8,7 @@
           <div class="project-wrapper">
             <h2 class="project-title" :style="{color: project.style}">{{ project.title }}</h2>
             <p class="project-detail">{{ project.detail }}</p>
-            <a class="project-more" href="#">show more ></a>
+            <a class="project-more" :href="project.route">show more ></a>
           </div>
         </b-col>
         <b-col cols="12" sm="6">
@@ -25,18 +25,19 @@ export default {
   name: 'Projects',
   data: () => ({
     projects: [
-      {
-        title: 'Barabe',
-        detail: 'Band portfolio / 2019.',
-        img: require('../assets/img/barabe.png'),
-        style: 'white'
-      },
+      // {
+      //   title: 'Barabe',
+      //   detail: 'Band portfolio / 2019.',
+      //   img: require('../assets/img/barabe.png'),
+      //   style: 'white'
+      // },
       {
         title: 'PU Turopolje',
         detail: 'Beekeeping association blog / 2020.',
         img: require('../assets/img/put.png'),
         style: 'black',
-        reverse: true
+        reverse: true,
+        route: '/puturopolje'
       },
     ]
   }),
@@ -61,7 +62,7 @@ export default {
   box-shadow: 0px 0px 20px 0px #D2D2D2;
   align-items: center;
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     background-color: white;
   }
 

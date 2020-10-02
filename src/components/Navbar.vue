@@ -5,15 +5,15 @@
       <b-row class="nav-height">
 
         <b-col cols="3" class="text-left">
-          <a href="#" class="logo">ivan<span>svrga</span></a>
+          <a href="/home" class="logo">ivan<span>svrga</span></a>
         </b-col>
 
         <b-col cols="6" class="nav-links">
-          <a href="#"><router-link to="/">home</router-link></a>
+          <router-link to="/">home</router-link>
           <span>/</span>
-          <a href="#"><router-link to="/projects">projects</router-link></a>
+          <router-link to="/projects">projects</router-link>
           <span>/</span>
-          <a href="#">contact</a>
+          <router-link to="/contact">contact</router-link>
         </b-col>
 
         <b-col cols="3" class="contact">
