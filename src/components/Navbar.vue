@@ -11,7 +11,7 @@
         <b-col cols="6" class="nav-links">
           <a href="#"><router-link to="/">home</router-link></a>
           <span>/</span>
-          <a href="#">projects</a>
+          <a href="#"><router-link to="/projects">projects</router-link></a>
           <span>/</span>
           <a href="#">contact</a>
         </b-col>

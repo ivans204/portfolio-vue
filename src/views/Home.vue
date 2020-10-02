@@ -26,12 +26,6 @@
     </section>
     <Skills></Skills>
 
-    <section id="contact">
-      <b-container>
-        <h2 class="contact-title">For any questions, feel free to contact me.</h2>
-        <button class="contact-btn">contact ></button>
-      </b-container>
-    </section>
   </div>
 </template>
 
