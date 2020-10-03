@@ -17,8 +17,13 @@ const routes = [
   },
   {
     path: '/puturopolje',
-    name: 'puturopolje',
+    name: 'Puturopolje',
     component: () => import(/* webpackChunkName: "about" */ '../views/PUTuropolje.vue')
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')
   },
   {
     path: '*',

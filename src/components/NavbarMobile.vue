@@ -44,7 +44,6 @@
         <router-link @click.native="show = false" to="/">home</router-link>
         <router-link @click.native="show = false" to="/projects">projects</router-link>
         <router-link @click.native="show = false" to="/contact">contact</router-link>
-        {{show}}
       </div>
 
     </div>
