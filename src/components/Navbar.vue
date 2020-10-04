@@ -17,7 +17,7 @@
         </b-col>
 
         <b-col cols="3" class="contact">
-          <button class="btn-contact ml-auto d-block">contact me</button>
+          <router-link to="/contact"> <button class="btn-contact ml-auto d-block">contact me</button></router-link>
         </b-col>
 
       </b-row>

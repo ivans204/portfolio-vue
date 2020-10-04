@@ -2,8 +2,8 @@
   <div class="home">
     <section id="intro">
       <b-container>
-        <h1 class="intro-text">Hi! <span class="font-weight-bold">I'm Ivan,</span> web developer <br> based in
-          Croatia<span class="yellow font-weight-bold">.</span></h1>
+        <h1 class="intro-text">Hi! <span class="font-weight-bold">I'm Ivan,</span> web developer
+          <br> from Croatia<span class="yellow font-weight-bold">.</span></h1>
       </b-container>
     </section>
     <About></About>

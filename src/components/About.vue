@@ -8,7 +8,7 @@
 
           <div class="school">
             <p class="education-year">2015-2020</p>
-            <p class="education-school">Faculty of transport and traffic science Zagreb</p>
+            <p class="education-school">Faculty of transport and traffic sciences Zagreb</p>
             <p class="education-major">Information and communications transport</p>
           </div>
 
@@ -22,8 +22,10 @@
         <b-col cols="12" sm="7" class="about">
           <h3><span>// </span>About Me</h3>
           <p class="about-text">My name is Ivan Švrga and I'm from Velika Gorica (town near Zagreb).</p>
-          <p class="about-text">My passion is front-end development and I like to be surrounded with countless lines of
-            code, because it makes me feel good doing something like this.</p>
+          <p class="about-text">
+            I'm a web developer who loves to work with latest web technologies. I built a variety of web applications,
+            blogs, pages and etc. for clients and for myself.
+          </p>
           <p class="about-text">For anything else about me feel free to contact me. :)</p>
         </b-col>
 
@@ -65,7 +67,7 @@ export default {
     padding-right: 15px;
   }
 
-  @media screen and (width: 576px)  {
+  @media screen and (width: 576px) {
     padding: 0 20px;
   }
 
@@ -78,7 +80,7 @@ export default {
   background-color: #111111;
   padding-left: 50px;
 
-  @media screen and (width: 576px)  {
+  @media screen and (width: 576px) {
     padding: 0 20px;
   }
 

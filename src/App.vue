@@ -5,12 +5,7 @@
 
     <router-view/>
 
-    <section id="contact">
-      <b-container>
-        <h2 class="contact-title">For any questions, feel free to contact me.</h2>
-        <button class="contact-btn">contact ></button>
-      </b-container>
-    </section>
+    <ContactQuote v-if="!isContact"></ContactQuote>
     <Footer></Footer>
 
   </div>
@@ -20,12 +15,22 @@
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue'
 import Footer from '@/components/Footer.vue'
+import ContactQuote from '@/components/ContactQuote.vue'
 
 export default {
   name: 'Home',
   components: {
     Navbar,
     Footer,
+    ContactQuote
+  },
+  computed: {
+    currentRouteName() {
+      return this.$route.name;
+    },
+    isContact() {
+      return this.currentRouteName === 'Contact' ? true : false
+    }
   }
 }
 </script>
@@ -73,27 +78,5 @@ export default {
       color: #42b983;
     }
   }
-}
-
-#contact {
-  background-color: black;
-  padding: 100px 0;
-}
-
-.contact-title {
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.contact-btn {
-  background-color: transparent;
-  color: #F9CA30;
-  border: none;
-  font-size: 1.5rem;
-  letter-spacing: 3px;
-  margin: 0 auto;
-  display: block;
 }
 </style>
