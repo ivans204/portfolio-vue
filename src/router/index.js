@@ -21,6 +21,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/PUTuropolje.vue')
   },
   {
+    path: '/explorerhr',
+    name: 'Explorer.hr',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ExplorerWeb.vue')
+  },
+  {
     path: '/contact',
     name: 'Contact',
     component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')

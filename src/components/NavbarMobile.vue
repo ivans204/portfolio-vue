@@ -13,7 +13,7 @@
         </b-col>
 
         <b-col cols="6" class="text-center">
-          <a href="#" class="logo">ivan<span>svrga</span></a>
+          <a href="/home" class="logo">ivan<span>svrga</span></a>
         </b-col>
 
         <b-col cols="3" class="contact">

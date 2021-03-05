@@ -25,17 +25,18 @@ export default {
   name: 'Projects',
   data: () => ({
     projects: [
-      // {
-      //   title: 'Barabe',
-      //   detail: 'Band portfolio / 2019.',
-      //   img: require('../assets/img/barabe.png'),
-      //   style: 'white'
-      // },
+      {
+        title: 'Explorer.hr',
+        detail: 'Custom Woocommerce store / 2021.',
+        img: require('../assets/img/explorer.png'),
+        style: 'black',
+        route: '/explorerhr'
+      },
       {
         title: 'PU Turopolje',
         detail: 'Beekeeping association blog / 2020.',
         img: require('../assets/img/put.png'),
-        style: 'black',
+        style: 'white',
         reverse: true,
         route: '/puturopolje'
       },
@@ -61,12 +62,13 @@ export default {
   margin-bottom: 100px;
   box-shadow: 0px 0px 20px 0px #D2D2D2;
   align-items: center;
+  padding: 50px;
 
   &:nth-child(odd) {
     background-color: white;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     padding: 50px 15px;
   }
 }
@@ -96,6 +98,10 @@ export default {
 .project-img {
   width: 100%;
   height: auto;
+
+  @media screen and (max-width: 575px) {
+    padding: 50px;
+  }
 }
 
 </style>
